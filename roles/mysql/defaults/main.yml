@@ -1,0 +1,4 @@
+---
+wp_username: db_user
+wp_db_name: db_db
+wp_user_password: 123

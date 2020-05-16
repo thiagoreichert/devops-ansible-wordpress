@@ -1,0 +1,6 @@
+---
+- name: 'Instala pacotes do Sistema Operacional'
+  yum:
+    name: ['httpd', 'mod_ssl', 'curl', 'tcpdump', 'telnet', 'wget','mysql-server','python36-mysql','python2-PyMySQL']
+    state: latest
+  become: yes

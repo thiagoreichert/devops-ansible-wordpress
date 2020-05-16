@@ -1,0 +1,8 @@
+---
+- name: 'Configura Apache para servir o Wordpress'
+  copy:
+    src: 'files/wordpress.conf'
+    dest: '/etc/httpd/conf.d/wordpress.conf'
+  become: yes
+  notify:
+    - start httpd

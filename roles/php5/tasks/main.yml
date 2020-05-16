@@ -1,0 +1,6 @@
+---
+- name: 'Instala pacotes do PHP'
+  yum:
+    name: ['php56w', 'php56w-gd', 'php56w-mcrypt','php56w-mysql']
+    state: latest
+  become: yes

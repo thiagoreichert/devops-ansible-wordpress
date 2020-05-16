@@ -1,0 +1,12 @@
+<VirtualHost *:80>
+    DocumentRoot        "{{ wp_installation_dir }}"
+    ServerName          wordpress.com.br
+    ErrorLog            logs/wordpress.com.br_error_log
+    CustomLog           logs/wordpress.com.br_access_log combined
+</VirtualHost>
+ 
+<Directory ""{{ wp_installation_dir }}"">
+    Options Indexes FollowSymLinks Includes ExecCGI
+    AllowOverride All
+    Require all granted
+</Directory>
